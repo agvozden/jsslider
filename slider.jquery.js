@@ -1,6 +1,7 @@
 /*
  * Jquery Slider left / right
  * by agvozden
+ * aleksandar@gvozden.info
  */
 (function($) {
 $.fn.slider = function(options) {
