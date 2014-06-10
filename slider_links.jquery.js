@@ -13,6 +13,8 @@ var slider_numbers = false;
 
 /**
  * slider with links 
+ * @author agvozden
+ * www.gvozden.info
  * @param {} $ 
  */
 (function($) {
