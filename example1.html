@@ -1,0 +1,24 @@
+<style>
+#slider {width:500px;height:320px;position:relative;z-index:10;overflow:hidden}
+#slider img{display:none;max-height:320px;width:500px;transform-origin: right bottom 0;transition-duration: 5s, 10s;transition-property: opacity, transform}
+#slider img.fx{transform: scale(1.1) translate(20px)}
+#slider-txt {padding:5px;color:#ff6;background:url(../images/transparent.png) repeat rgba(0, 0, 0, 0.6);position:relative;z-index:11;height:120px;top:-120px}
+#slider-txt h3{margin:0}
+#slider-txt a{color:#ff6}
+#slider ul.slider-links {position:absolute;top:10px;right:10px;display:inline-block}
+#slider ul.slider-links li {display:inline;margin:0 0 0 5px}
+#slider ul.slider-links li a {border:1px solid #999;padding:2px 5px;background:#eee;color:#111}
+#slider ul.slider-links li a.active {background:#666;color:#eee}
+</style>
+
+<!--headline_news-->
+<div id="slider"> 
+  <!--news_list--> 
+  <img data-src="{thumbnail}" data-src-small="{thumbnail_small}" width="500" height="320" alt="{title}" title="{text}" longdesc="{news_url}" class="" />
+  <!--/news_list-->
+  <div id="slider-txt">
+    <h3>{title}</h3>
+    <span>{text}</span></div>
+  <ul class="slider-links">
+  </ul>
+</div>
